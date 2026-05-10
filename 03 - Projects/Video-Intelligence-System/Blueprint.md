@@ -1,236 +1,265 @@
-# Video Intelligence System — Architecture Blueprint
-*TOE Vault · Master Project Document*
+# Local Intelligence Platform — Master Blueprint
+*TOE Vault · Master Project Document · Living Document*
 
 ---
 
-## Project Summary
+## Vision Statement
 
-A locally-hosted web application for esoteric video analysis — pattern recognition, symbology, subliminal detection, and TOE vault integration. Runs on ARM64 hardware, accessed via browser on the local intranet. No recurring API cost. Videos never leave the local network.
-
----
-
-## Hardware Inventory
-
-| Device | Role | Notes |
-|---|---|---|
-| Raspberry Pi 5 (8GB) | Web server, task queue, OpenCV Stage 1, file management | Passive cooling — marine environment. Do not run sustained LLM inference here. |
-| Google Pixel (GrapheneOS) | LLM inference via Termux + llama.cpp | Tensor chip with NPU. Best free local option. |
-| Oracle Cloud Free Tier (optional) | Remote LLM inference | 4 ARM cores, 24GB RAM. Genuinely free forever. Best quality option. |
+A private, locally-hosted intelligence platform running on ARM64 hardware. Its purpose is to reverse-engineer the hidden structural, esoteric, and geometric frameworks used by long-lasting institutions — royal families, governments, religions, Fortune 500 companies — and apply those findings to personal and operational decisions. Sacred geometry is the meta-framework connecting all modules.
 
 ---
 
-## The Four Options
+## Core Thesis
 
-### Option A — RPi5 Only
-- Model: Moondream2 (1.8B, ~1.5GB) or LLaVA 7B Q4 (~4.5GB)
-- Cost: $0
-- Speed: 5–15 min/video
-- Risk: Sustained CPU heat on passive-cooled marine hardware
-- Verdict: Viable for occasional use. Not for batch processing 200 videos.
+> If an institution has lasted — it works. Study what it does. Extract the pattern. Apply it.
 
-### Option B — RPi5 + Pixel (Recommended Free Option)
-- RPi5: web UI, OpenCV frame extraction, task queue, vault output
-- Pixel: runs llama.cpp via Termux, receives flagged frames over local network HTTP
-- Model: LLaVA 7B Q4 or Moondream2 on Termux
-- Cost: $0
-- Speed: 2–5 min/video (Tensor NPU assists)
-- Privacy: 100% local, no cloud dependency
-- Verdict: Best balance of cost, quality, and thermal safety for the RPi5.
-
-### Option C — RPi5 + Oracle Cloud Free Tier (Recommended Quality Option)
-- RPi5: web UI, OpenCV, task queue, vault output
-- Oracle: runs Ollama + LLaVA 13B (24GB RAM enables larger models)
-- RPi5 sends flagged frames to Oracle via HTTPS, receives analysis JSON
-- Cost: $0 forever (Oracle ARM free tier is permanent)
-- Speed: Fast — larger model, more RAM, dedicated instance
-- Tradeoff: Requires internet connection during analysis. Frames leave local network.
-- Verdict: Best analysis quality at zero cost.
-
-### Option D — RPi5 + RunPod GPU (Best Quality, Small Cost)
-- RPi5: web UI, OpenCV, task queue
-- RunPod: spins up on-demand GPU instance, runs LLaVA 34B or Llama 3.2 Vision 11B
-- Cost: ~$0.20–0.40/hr. 200 videos ≈ $1.50–3.00 total. Well under $10/month.
-- Speed: Fastest. Highest quality output.
-- Verdict: Best for large batch processing. Pay only when running.
+The triangle is the foundational structure: stable, hierarchical, load-distributing. It appears in governance (executive/legislative/judicial), religion (trinity), Freemasonry, corporate structure (board/management/operations), and sacred geometry. This platform is built to find it everywhere and make it actionable.
 
 ---
 
-## Recommended Architecture
+## Hardware
 
-**Primary: Option B (RPi5 + Pixel)**
-**Fallback/Batch: Option C (Oracle Free Tier)**
-
-Use the Pixel for day-to-day single video analysis. Switch to Oracle for batch runs of many videos. RPi5 never runs inference — protecting the passive cooling setup.
+| Device | Role |
+|---|---|
+| Raspberry Pi 5 (8GB) | Web server, task orchestration, file management, OpenCV. No LLM inference. |
+| Google Pixel (GrapheneOS) | Primary LLM inference via Termux + llama.cpp. Local network only. |
+| Oracle Cloud Free Tier | Secondary inference for batch jobs. 4 ARM cores, 24GB RAM. Free forever. |
 
 ---
 
-## System Architecture
+## The Four Modules
+
+### MODULE 1 — VISION (Video Analysis)
+Analyze video for esoteric patterns, symbology, subliminal messaging, hidden structure, and TOE vault connections.
+
+**Pipeline:**
+1. Upload video via drag-and-drop
+2. OpenCV Stage 1 on RPi5 — scene cuts, flash events, geometric contours, color shifts, face/eye regions, brightness spikes
+3. Flagged frames sent to LLM (Pixel or Oracle)
+4. LLM returns: symbols, patterns, hidden messages, core message, TOE connections, suggested tags
+5. Markdown vault note generated — saved and optionally synced to Google Drive
+
+---
+
+### MODULE 2 — CODEX (Book Ingestion & Transcription)
+
+**Accepted formats:** PDF, EPUB, MOBI, DJVU, CBZ/CBR, DOCX, RTF, TXT, HTML, AZW3
+
+**Pipeline per book:**
+1. Drag-and-drop upload
+2. Format detection → appropriate parser
+3. Text extracted → cleaned → converted to Markdown with TOE frontmatter
+4. Images extracted → converted to **WebP** (best compression, lossless option for diagrams/sacred geometry illustrations)
+5. Two files created per book:
+   - `[Title].md` — full transcription (living document)
+   - `[Title] - Analysis.md` — esoteric/structural analysis (living document)
+6. Analysis file examines: sacred geometry references, numerology in dates/names, structural frameworks used, TOE connections
+
+**Living Document Schedule:**
+- Weekly automated re-analysis pass (every Sunday 02:00)
+- Manual override: "Re-analyze now" button in UI
+- Version history tracked via git on RPi5
+
+**Image storage strategy:**
+- WebP lossy (quality 75) for photographs → typically 60–80% smaller than JPEG
+- WebP lossless for diagrams, charts, sacred geometry illustrations → preserves precision
+- Stored in `/vault_output/books/[Title]/images/`
+
+---
+
+### MODULE 3 — ORACLE (Astrology & Numerology Engine)
+
+**Purpose:** Calculate, interpret, and apply astrological and numerological data to timing, analysis, and decision-making. Feed results into SOVEREIGN module and personal planning.
+
+**Astrological capabilities:**
+- **Natal/Founding charts** — enter any date, time, location to generate a full chart (personal or corporate)
+- **Transit tracking** — current planetary positions overlaid on any natal chart
+- **Electional astrology** — identify optimal windows for specific actions (launching, signing, hiring, publishing)
+- **Mundane astrology** — planetary ingresses, eclipses, major conjunctions mapped to world/market events
+- **Solar returns, progressions** — longer-term cycle analysis
+- **Synastry** — relationship/compatibility between two charts (person-to-person or person-to-company)
+
+**Numerology capabilities:**
+- Name numerology (Pythagorean and Chaldean)
+- Date numerology — life path, expression, soul urge
+- Company name + founding date analysis
+- Address/location numerology
+
+**Sacred geometry layer:**
+- Chart wheels rendered with geometric overlays (grand trines, T-squares, Star of David patterns, yods)
+- Identify triangular configurations (trines, grand trines) — the stable 120° structure
+- Flag cardinal cross patterns, kites, mystic rectangles
+- Connect geometric patterns in charts to structural patterns found in SOVEREIGN dossiers
+
+**Astro-calendar (weekly):**
+- Every Sunday: auto-generate the week's significant transits
+- Flag: void-of-course moons, Mercury retrograde windows, major aspect exact dates
+- Electional recommendations for the coming week
+- Pushed to TOE vault as `Astro-Week-YYYY-MM-DD.md`
+
+**Backend:** Swiss Ephemeris (pyswisseph) — accurate, offline, free, ARM64 compatible
+
+---
+
+### MODULE 4 — SOVEREIGN (Business Intelligence)
+
+**Purpose:** Observe, study, and dissect successful long-lasting institutions — royal families, governments, religions, Fortune 500 companies, billionaire-controlled entities — to extract the structural, esoteric, and operational frameworks that make them work. Apply findings to personal operations.
+
+**This module is observational. No personal business operations tracked here — pure intelligence gathering.**
+
+**Dossier structure per entity:**
+```
+Entity Name
+├── Profile.md          — founding date, key figures, structure, history
+├── Chart.md            — natal/founding astrology chart + interpretation
+├── Numerology.md       — name, date, address numerology analysis
+├── Sacred-Geometry.md  — logo analysis, building/layout geometry, org structure triangles
+├── Patterns.md         — what they do repeatedly (timing of launches, acquisitions, etc.)
+├── Esoteric-Signals.md — symbols used, affiliations, ceremonial behavior, public rituals
+└── Synthesis.md        — what works, why, and how it can be applied (living document)
+```
+
+**Research pipeline:**
+1. Enter company/institution name + founding date (+ HQ location if known)
+2. System auto-generates: numerology report, founding chart, chart interpretation
+3. Web research task queued: pulls public information (leadership, key dates, milestones)
+4. LLM analyzes gathered data through esoteric/structural lens
+5. All six dossier files created and saved to vault
+6. Weekly re-analysis checks for new public information and updates Synthesis.md
+
+**What to look for (standing analysis criteria):**
+- Use of triangular org structures (triad leadership, three-tier hierarchy)
+- Numerologically significant founding dates, IPO dates, product launches
+- Astrological timing of major moves (acquisitions, leadership changes, public offerings)
+- Sacred geometry in branding (logos, architecture, spatial layout of HQ)
+- Masonic, Rosicrucian, or other esoteric affiliations of founders/leadership
+- Cyclical patterns — do they operate on 7-year, 19-year, Saturn-return cycles?
+- Ceremonial behavior disguised as corporate ritual (annual meetings, product launches as events)
+
+**Entities of interest (seed list — expand as research grows):**
+- British Royal Family
+- Vatican / Catholic Church
+- Rothschild family enterprises
+- Rockefeller institutions
+- Freemasonic lodges and affiliated foundations
+- BlackRock / Vanguard / State Street
+- Fortune 500 with esoteric founding histories
+- Long-running nation-states (UK, Vatican City, Switzerland)
+
+---
+
+## Cross-Module Intelligence Flow
 
 ```
-Browser (any device on LAN)
-        │
-        ▼
-[ RPi5 — Flask Web Server :5000 ]
-        │
-        ├── /upload        → receives video file
-        ├── /analyze       → triggers pipeline
-        ├── /status        → SSE progress stream
-        └── /vault         → browse/download markdown output
-        │
-        ▼
-[ Stage 1 — OpenCV on RPi5 ] (lightweight, no model)
-        │
-        Detects:
-        ├── Scene cuts & flash events
-        ├── Geometric contours & shapes
-        ├── Face/eye regions
-        ├── Color dominance shifts
-        ├── Optical flow anomalies
-        └── Brightness spikes (subliminal candidates)
-        │
-        Outputs: flagged_frames[] with timestamps & detection_type
-        │
-        ▼
-[ Stage 2 — Vision LLM ] (on Pixel or Oracle)
-        │
-        Receives: flagged frames only (not full video)
-        Prompt: TOE esoteric analysis system prompt
-        Returns: JSON — symbols, patterns, hidden messages,
-                         core message, TOE connections, tags
-        │
-        ▼
-[ Markdown Generator on RPi5 ]
-        │
-        Writes: YYYY-MM-DD - [title].md
-        Format: TOE Tagging Standard frontmatter
-        Path: vault output folder (synced to Google Drive)
-        │
-        ▼
-[ Browser — Results Display ]
+VISION (video)  ──┐
+CODEX (books)   ──┼──→ TOE VAULT ←──→ ORACLE (astrology)
+SOVEREIGN       ──┘         │
+                            ▼
+                    Weekly Synthesis Report
+                    (auto-generated Sunday)
+                    Connections across all modules
+                    New patterns flagged for review
 ```
 
 ---
 
 ## Technology Stack
 
-| Layer | Technology | Reason |
-|---|---|---|
-| Web server | Python + Flask | Lightweight, RPi5-appropriate, simple SSE support |
-| Task queue | Redis + RQ | Non-blocking video processing, progress tracking |
-| Video decode | ffmpeg + PyAV | ARM64-optimized, handles all formats |
-| CV analysis | OpenCV 4.x (ARM64) | Native ARM build, fast on RPi5 |
-| LLM inference | llama.cpp (Termux) / Ollama (Oracle) | ARM64-optimized, runs vision models |
-| Vision model | LLaVA 7B Q4 (Pixel) / LLaVA 13B (Oracle) | Best vision+language balance per hardware |
-| Frontend | Vanilla HTML/CSS/JS | No build step, no dependencies, fast |
-| Vault output | Markdown + YAML frontmatter | TOE Tagging Standard compliant |
-| Sync | rclone → Google Drive | Scheduled or manual push from RPi5 |
+| Layer | Technology |
+|---|---|
+| Web server | Python + Flask |
+| Task queue | Redis + RQ (non-blocking, progress streaming) |
+| Video decode | ffmpeg + PyAV |
+| CV analysis | OpenCV 4.x (ARM64) |
+| Book parsing | Calibre CLI, PyMuPDF, ebooklib, python-docx, Tesseract OCR |
+| Image compression | Pillow → WebP conversion |
+| LLM inference | llama.cpp (Termux/Pixel) + Ollama (Oracle) |
+| Vision model | LLaVA 7B Q4 (Pixel) / LLaVA 13B (Oracle) |
+| Astrology engine | pyswisseph (Swiss Ephemeris — offline, ARM64) |
+| Chart rendering | Kerykeion (Python astrology charts) |
+| Numerology | Custom Python module (Pythagorean + Chaldean) |
+| Frontend | Vanilla HTML/CSS/JS — no build step |
+| Version control | Git on RPi5 — tracks all living document changes |
+| Vault sync | rclone → Google Drive (on-demand or scheduled) |
 
 ---
 
 ## File Structure on RPi5
 
 ```
-/home/e031a/toe-vision/
-├── app.py                  # Flask server
-├── pipeline/
-│   ├── extractor.py        # ffmpeg frame extraction
-│   ├── cv_analyzer.py      # OpenCV Stage 1
-│   ├── llm_client.py       # HTTP client → Pixel or Oracle
-│   └── markdown_gen.py     # TOE vault note generator
-├── static/                 # Frontend HTML/CSS/JS
+/home/e031a/toe-platform/
+├── app.py
+├── config.yaml
+├── modules/
+│   ├── vision/
+│   │   ├── extractor.py
+│   │   ├── cv_analyzer.py
+│   │   └── llm_client.py
+│   ├── codex/
+│   │   ├── parser.py
+│   │   ├── image_extractor.py
+│   │   └── markdown_gen.py
+│   ├── oracle/
+│   │   ├── ephemeris.py
+│   │   ├── chart_engine.py
+│   │   ├── numerology.py
+│   │   └── electional.py
+│   └── sovereign/
+│       ├── dossier_builder.py
+│       ├── researcher.py
+│       └── synthesis.py
+├── static/
 ├── templates/
-├── vault_output/           # Generated .md files (rclone syncs this)
-├── video_inbox/            # Uploaded videos (temp)
-└── config.yaml             # Inference target, model, paths
+├── vault_output/
+│   ├── video-analysis/
+│   ├── books/
+│   ├── astro/
+│   └── sovereign/
+├── video_inbox/
+└── scheduler/
+    └── weekly_jobs.py
 ```
 
 ---
 
-## LLM Inference Setup
+## Scheduled Automation (Weekly — Sunday 02:00)
 
-### Option B — Pixel (GrapheneOS + Termux)
-```bash
-# In Termux on Pixel
-pkg install clang cmake git
-git clone https://github.com/ggerganov/llama.cpp
-cd llama.cpp && make -j4 LLAMA_CLBLAST=1
-# Download LLaVA 7B Q4 GGUF
-# Run as HTTP server on port 8080
-./llama-server -m llava-7b-q4.gguf --port 8080 --host 0.0.0.0
-```
+1. Re-analyze all living documents for new connections
+2. Generate astro-week forecast for coming 7 days
+3. Update SOVEREIGN dossiers with any new cross-module patterns
+4. Generate weekly synthesis report — what connected, what emerged
+5. Push all updates to Google Drive vault via rclone
 
-### Option C — Oracle Cloud
-```bash
-# On Oracle ARM instance
-curl -fsSL https://ollama.com/install.sh | sh
-ollama pull llava:13b
-ollama serve  # accessible via public IP + firewall rule
-```
+Manual override available from UI at any time.
 
 ---
 
-## TOE Analysis System Prompt (Core)
+## Build Phase Sequence
 
-The LLM receives this system prompt with every frame batch:
-
-> You are an expert in symbology, esoteric traditions, subliminal analysis, and the Theory of Everything knowledge framework. Analyze these video frames for: recurring patterns, symbols (occult/sacred/corporate/governmental), subliminal elements, hidden messages, core overt and covert messaging, and connections to TOE domains (consciousness, cosmology, astrology, sacred-geometry, numerology, power-structures, simulation-theory, frequency-vibration, mythology, esoteric-traditions). Return structured JSON only.
-
----
-
-## Vault Output Format
-
-Every analyzed video produces one markdown file:
-
-```yaml
----
-title: "[AI-generated descriptive title]"
-date: YYYY-MM-DD
-type: video-analysis
-tags: [symbology, hidden-knowledge, power-structures, ...]
-source_file: "video.mp4"
-duration_seconds: 2700
-frames_analyzed: 34
-significance: high|medium|low
-vault_worthy: true
----
-```
-
-Saved to: `vault_output/YYYY-MM-DD - [title].md`
-Synced to: `My Drive/toe/03 - Projects/Video-Intelligence-System/`
-
----
-
-## Cost Summary
-
-| Scenario | Cost |
+| Phase | Scope |
 |---|---|
-| 200 videos × 45 min (Option B — Pixel) | $0 |
-| 200 videos × 45 min (Option C — Oracle) | $0 |
-| 200 videos × 45 min (Option D — RunPod) | ~$1.50–3.00 |
-| Monthly ongoing (any option) | < $5 |
-
----
-
-## Build Order (Phase Sequence)
-
-1. **Phase 1** — RPi5 Flask server + file upload + ffmpeg extraction
-2. **Phase 2** — OpenCV Stage 1 (scene detection, flash detection, contour/shape, face regions)
-3. **Phase 3** — LLM client (configurable target: Pixel or Oracle)
-4. **Phase 4** — Markdown generator (TOE Tagging Standard)
-5. **Phase 5** — Frontend (drag-drop upload, progress, results, vault preview)
-6. **Phase 6** — rclone sync to Google Drive vault
+| 1 | Core Flask server, file upload, routing, progress streaming |
+| 2 | VISION — OpenCV + LLM pipeline + markdown output |
+| 3 | CODEX — Book parsing, OCR, WebP image extraction, transcription |
+| 4 | ORACLE — Swiss Ephemeris, natal charts, numerology, electional calendar |
+| 5 | SOVEREIGN — Dossier builder, research pipeline, synthesis |
+| 6 | Scheduler — weekly automation, living document updates |
+| 7 | Cross-module synthesis — connections engine, weekly report |
+| 8 | rclone Google Drive sync, git versioning |
 
 ---
 
 ## Open Questions
 
-- [ ] Confirm Pixel LAN IP is static (set in GrapheneOS network settings)
-- [ ] Decide primary inference target: Pixel (Option B) or Oracle (Option C)
-- [ ] Confirm vault sync method: rclone scheduled cron, or manual trigger from UI
-- [ ] Video storage: how much space is available on RPi5? SSD or SD card?
+- [ ] Confirm Pixel LAN IP is static
+- [ ] RPi5 storage available (SSD or SD card, free space)
+- [ ] Primary inference target confirmed: Pixel (Option B)
+- [ ] Personal natal chart data — to be added to ORACLE when ready
+- [ ] Seed list of entities for SOVEREIGN — to be expanded
 
 ---
 
-*Blueprint created: 2026-05-10*
-*Project: Video Intelligence System*
-*Status: Pre-development — awaiting build phase approval*
+*Blueprint version: 2.0*
+*Updated: 2026-05-10*
+*Status: Pre-development — awaiting Phase 1 build approval*
+*Next action: Confirm storage situation, then begin Phase 1*
