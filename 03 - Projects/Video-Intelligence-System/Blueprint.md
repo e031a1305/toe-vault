@@ -1,6 +1,6 @@
 # Local Intelligence Platform — Master Blueprint
 *TOE Vault · Master Project Document · Living Document*
-*Version 3.0 — Updated 2026-05-10*
+*Version 4.0 — Updated 2026-05-10*
 
 ---
 
@@ -14,7 +14,7 @@ A private, locally-hosted intelligence platform running on ARM64 hardware. Its p
 
 > If an institution has lasted — it works. Study what it does. Extract the pattern. Apply it.
 
-The triangle is the foundational structure: stable, hierarchical, load-distributing. This platform finds it everywhere and makes it actionable.
+The triangle is the foundational structure. This platform finds it everywhere and makes it actionable.
 
 ---
 
@@ -22,9 +22,100 @@ The triangle is the foundational structure: stable, hierarchical, load-distribut
 
 | Device | Role |
 |---|---|
-| Raspberry Pi 5 (8GB) | Web server, task orchestration, file management, OpenCV, audio analysis. No LLM inference. |
-| Google Pixel (GrapheneOS) | Primary LLM inference via Termux + llama.cpp. Local network only. |
-| Oracle Cloud Free Tier | Secondary inference for batch jobs. 4 ARM cores, 24GB RAM. Free forever. |
+| Raspberry Pi 5 (8GB) | Docker host — all services. Web server, task orchestration, OpenCV, audio analysis, AdGuard network-wide DNS. No LLM inference. |
+| Seagate SSD (2TB, USB) | Primary active storage — vault output, inbox, models, database |
+| WD HDD (2TB, 12V external) | Archive — original source files (video, books, audio) |
+| SD card (115G, 67G free) | OS + Docker + application code only |
+| Google Pixel (GrapheneOS) | Primary LLM inference — Termux + llama.cpp. Same LAN. |
+| Spare Android phone | Secondary LLM inference — dedicated to RESONANCE module |
+| Oracle Cloud Free Tier | Batch inference fallback — 4 ARM cores, 24GB RAM, free forever |
+| Samsung Smart TV | Read-only dashboard display via browser |
+
+---
+
+## Storage Layout
+
+| Mount | Device | Contents |
+|---|---|---|
+| `/` | SD card | OS, Docker engine, app code |
+| `/mnt/ssd` | Seagate SSD | vault_output, inbox, LLM models, Redis data |
+| `/mnt/archive` | WD HDD | Original source files — video, books, audio |
+
+---
+
+## Network Architecture
+
+**AdGuard Home** runs in Docker on the RPi5, acting as DNS server for the entire network. All devices point to RPi5's static IP as their DNS server. Ads and trackers blocked network-wide — including the Samsung TV.
+
+```
+Router (DHCP)
+    │
+    ├── RPi5 static IP (e.g. 192.168.1.10)
+    │       ├── AdGuard Home :3000 (admin UI)
+    │       ├── DNS :53
+    │       ├── TOE Platform :5000
+    │       └── Redis :6379 (internal only)
+    │
+    ├── Pixel static IP (e.g. 192.168.1.11)
+    │       └── llama.cpp inference server :8080
+    │
+    ├── Spare Android static IP (e.g. 192.168.1.12)
+    │       └── llama.cpp inference server :8081
+    │
+    └── Samsung TV
+            └── Accesses TOE Platform at 192.168.1.10:5000
+                (read-only dashboard mode, TV-optimized layout)
+```
+
+All services accessed by internal IP — no domain names required.
+
+---
+
+## Docker Compose Stack
+
+All services defined in one `docker-compose.yml`. Single command starts everything.
+
+```yaml
+services:
+
+  adguard:
+    image: adguard/adguardhome:latest
+    ports:
+      - "53:53/tcp"
+      - "53:53/udp"
+      - "3000:3000/tcp"
+    volumes:
+      - /mnt/ssd/adguard/work:/opt/adguardhome/work
+      - /mnt/ssd/adguard/conf:/opt/adguardhome/conf
+    restart: unless-stopped
+
+  redis:
+    image: redis:7-alpine
+    volumes:
+      - /mnt/ssd/redis:/data
+    restart: unless-stopped
+
+  toe-worker:
+    build: .
+    command: rq worker
+    volumes:
+      - /mnt/ssd:/mnt/ssd
+      - /mnt/archive:/mnt/archive
+    depends_on:
+      - redis
+    restart: unless-stopped
+
+  toe-platform:
+    build: .
+    ports:
+      - "5000:5000"
+    volumes:
+      - /mnt/ssd:/mnt/ssd
+      - /mnt/archive:/mnt/archive
+    depends_on:
+      - redis
+    restart: unless-stopped
+```
 
 ---
 
@@ -47,9 +138,10 @@ The triangle is the foundational structure: stable, hierarchical, load-distribut
 **Pipeline:**
 1. Upload via drag-and-drop
 2. OpenCV Stage 1 on RPi5 — scene cuts, flash events, contours, color shifts, face/eye regions, brightness spikes
-3. Flagged frames → LLM (Pixel or Oracle)
+3. Flagged frames → Pixel LLM
 4. LLM returns structured JSON analysis
-5. Unified vault note generated
+5. Unified vault note generated → `/mnt/ssd/vault_output/vision/`
+6. Original video archived → `/mnt/archive/video/`
 
 ---
 
@@ -59,12 +151,13 @@ The triangle is the foundational structure: stable, hierarchical, load-distribut
 
 **Pipeline:**
 1. Upload via drag-and-drop
-2. Format detection → appropriate parser
-3. Text → cleaned Markdown with TOE frontmatter
-4. Images → WebP (lossy 75 for photos, lossless for diagrams)
-5. Two output files: `[Title].md` (transcription) + `[Title] - Analysis.md` (esoteric analysis)
+2. Format detection → parser
+3. Text → Markdown with TOE frontmatter
+4. Images → WebP (lossy 75 photos, lossless diagrams/geometry)
+5. Two output files: `[Title].md` + `[Title] - Analysis.md`
+6. Original archived → `/mnt/archive/books/`
 
-**Living document schedule:** Weekly re-analysis Sunday 02:00. Manual override available.
+**Living document schedule:** Weekly re-analysis Sunday 02:00. Manual override in UI.
 
 ---
 
@@ -72,15 +165,14 @@ The triangle is the foundational structure: stable, hierarchical, load-distribut
 
 **Capabilities:**
 - Natal/founding charts — any date, time, location
-- Transit tracking — current planets on any chart
-- Electional astrology — optimal timing windows
+- Transit tracking — current planets overlaid on any chart
+- Electional astrology — optimal timing windows for specific actions
 - Mundane astrology — planetary cycles mapped to world/market events
 - Numerology — Pythagorean + Chaldean, names and dates
-- Sacred geometry overlays on chart wheels (grand trines, T-squares, Star of David, yods)
+- Sacred geometry overlays — grand trines, T-squares, Star of David, yods
 
-**Weekly output:** `Astro-Week-YYYY-MM-DD.md` pushed to vault every Sunday
-
-**Backend:** pyswisseph (Swiss Ephemeris — offline, accurate, ARM64)
+**Weekly output:** `Astro-Week-YYYY-MM-DD.md` every Sunday
+**Backend:** pyswisseph (Swiss Ephemeris — fully offline, ARM64)
 
 ---
 
@@ -90,7 +182,7 @@ The triangle is the foundational structure: stable, hierarchical, load-distribut
 
 **Dossier files per entity:**
 - `Profile.md` — founding date, structure, key figures, history
-- `Chart.md` — natal/founding astrology chart + interpretation
+- `Chart.md` — natal/founding astrology + interpretation
 - `Numerology.md` — name, date, address analysis
 - `Sacred-Geometry.md` — logo, architecture, org structure triangles
 - `Patterns.md` — timing of major moves, acquisitions, launches
@@ -103,46 +195,40 @@ The triangle is the foundational structure: stable, hierarchical, load-distribut
 
 ## MODULE 5 — RESONANCE (Music Analysis)
 
-**Input options:**
+**Input:**
 - Drag-and-drop audio file (MP3, FLAC, WAV, AAC, OGG)
-- YouTube URL → yt-dlp extracts audio + metadata automatically
-- Album artwork uploaded separately or auto-fetched from metadata
+- YouTube URL → yt-dlp extracts audio + metadata + thumbnail
+- Album artwork auto-fetched from file metadata or uploaded separately
 
-**What gets analyzed:**
+**Inference:** Spare Android phone dedicated to this module
 
-**Audio layer (librosa on RPi5 — no LLM needed):**
-- Tempo / BPM
-- Musical key and scale
-- Frequency spectrum and dominant tones
-- Solfeggio frequency proximity (396, 417, 432, 528, 639, 741, 852 Hz)
-- Silence and pause patterns (geometric timing analysis)
+**Audio layer (librosa — no LLM):**
+- BPM, musical key, scale
+- Frequency spectrum, dominant tones
+- Solfeggio proximity (396, 417, 432, 528, 639, 741, 852 Hz)
+- Silence/pause geometric patterns
 - Repetition and loop structures
-- Dynamic range and compression patterns
+- Dynamic range, compression
 - Ad lib timing and placement
 
 **Lyrics layer:**
-- Auto-transcribed from audio via Whisper (offline, free, ARM64)
-- Backup: Genius API fetch if Whisper confidence is low
-- LLM analysis: symbolism, numerology in word choice, hidden messaging, repeated phrases, call-and-response patterns, esoteric references
+- Whisper offline transcription (ARM64)
+- LLM: symbolism, numerology, hidden messaging, repetition patterns, esoteric references
 
 **Artwork layer:**
-- Album cover → OpenCV + LLM vision analysis
-- Sacred geometry detection in composition
-- Color symbolism
-- Hidden symbols, faces, sigils
-- Typography and numerology in title treatment
+- OpenCV + LLM vision
+- Sacred geometry in composition
+- Color symbolism, hidden symbols, sigils, typography numerology
 
-**Output:** Unified vault note (same schema as all other modules)
-
-**Artist dossier (optional):** Same structure as SOVEREIGN — natal chart, numerology, pattern analysis across discography
+**Artist dossier (optional):** Same SOVEREIGN structure — natal chart, numerology, discography pattern analysis
 
 ---
 
 ## Unified Output Standard
 
-Every module produces the same frontmatter and section structure. This ensures data is cross-referenceable and consistently interpretable.
+Every module produces identical frontmatter and section structure.
 
-### Frontmatter (all modules)
+### Frontmatter
 
 ```yaml
 ---
@@ -152,7 +238,6 @@ module: VISION | CODEX | RESONANCE | SOVEREIGN | ORACLE
 type: video-analysis | book-analysis | music-analysis | dossier | astro-report
 source: ""
 source_url: ""
-duration: ""
 tags: []
 significance: high | medium | low
 vault_worthy: true | false
@@ -164,74 +249,58 @@ confidence: 0.00
 
 ```
 ## Core Message
-What is being communicated — overtly and covertly.
-
 ## Patterns Identified
-Recurring structural, visual, sonic, or behavioral patterns.
-
 ## Symbolic Elements
-Symbols found with interpretation and context.
-
 ## Hidden / Subliminal Content
-Elements not immediately obvious to casual observation.
-
 ## Sacred Geometry
-Geometric structures identified — triangles, ratios, proportions, configurations.
-
 ## Numerological Findings
-Significant numbers, dates, name values, repeating figures.
-
 ## Astrological Connections
-Relevant planetary signatures, timing patterns, chart connections.
-
 ## TOE Vault Connections
-Links to existing vault topics with relevance rating (high/medium/low).
-
 ## Synthesis
-What works here. Why it works. How it can be applied.
-
 ## Suggested Tags
-`tag-one` `tag-two` `tag-three`
 ```
 
 ---
 
-## Cross-Module Intelligence Flow
+## TV Dashboard
 
-```
-VISION ──────┐
-CODEX ───────┤
-RESONANCE ───┼──→ TOE VAULT ←──→ ORACLE
-SOVEREIGN ───┘         │
-                       ▼
-               Weekly Synthesis Report
-               Connections across all five modules
-               New patterns flagged for review
-               Electional calendar for coming week
-```
+The Samsung Smart TV accesses `http://192.168.1.10:5000` in its browser.
+
+**TV mode activates automatically** when the browser viewport is ≥ 1280px and user-agent contains `SmartTV` or `Tizen`. Falls back to large-screen layout detection.
+
+**TV dashboard features:**
+- Read-only — no upload, no forms
+- Large text and tap targets (minimum 72px)
+- D-pad navigable (full keyboard focus management)
+- High contrast dark theme
+- Displays: recent analyses, weekly astro report, current transits, vault activity feed
+- Auto-refreshes every 5 minutes
 
 ---
 
 ## Technology Stack
 
-| Layer | Technology | Notes |
-|---|---|---|
-| Web server | Python + Flask | Lightweight, RPi5-appropriate |
-| Task queue | Redis + RQ | Non-blocking, progress streaming |
-| Video decode | ffmpeg + PyAV | ARM64 optimized |
-| CV analysis | OpenCV 4.x | ARM64 native |
-| Book parsing | PyMuPDF, ebooklib, python-docx, Tesseract | All formats covered |
-| Image compression | Pillow → WebP | 60-80% size reduction |
-| Audio analysis | librosa | Tempo, key, frequency, spectrum |
-| Lyrics transcription | Whisper (offline) | ARM64, free, accurate |
-| YouTube extraction | yt-dlp | Audio + metadata + thumbnail |
-| LLM inference | llama.cpp (Pixel) + Ollama (Oracle) | Vision + language |
-| Vision model | LLaVA 7B Q4 (Pixel) / LLaVA 13B (Oracle) | |
-| Astrology | pyswisseph + Kerykeion | Offline, accurate |
-| Numerology | Custom Python module | Pythagorean + Chaldean |
-| Frontend | Vanilla HTML/CSS/JS | No build step |
-| Version control | Git on RPi5 | Living document history |
-| Vault sync | rclone → Google Drive | Scheduled or on-demand |
+| Layer | Technology |
+|---|---|
+| Containerization | Docker + Docker Compose |
+| DNS / Ad-blocking | AdGuard Home (Docker) |
+| Web server | Python + Flask |
+| Task queue | Redis + RQ |
+| Video decode | ffmpeg + PyAV |
+| CV analysis | OpenCV 4.x (ARM64) |
+| Book parsing | PyMuPDF, ebooklib, python-docx, Tesseract |
+| Image compression | Pillow → WebP |
+| Audio analysis | librosa |
+| Lyrics transcription | Whisper (offline, ARM64) |
+| YouTube extraction | yt-dlp |
+| LLM inference | llama.cpp (Pixel + spare Android) |
+| Vision model | LLaVA 7B Q4 |
+| Astrology | pyswisseph + Kerykeion |
+| Numerology | Custom Python module (Pythagorean + Chaldean) |
+| Frontend | Vanilla HTML/CSS/JS — no build step |
+| TV layout | Responsive CSS — auto-detects TV viewport |
+| Version control | Git on RPi5 |
+| Vault sync | rclone → Google Drive |
 
 ---
 
@@ -239,33 +308,20 @@ SOVEREIGN ───┘         │
 
 ```
 /home/e031a/toe-platform/
+├── docker-compose.yml
+├── Dockerfile
 ├── app.py
 ├── config.yaml
 ├── modules/
 │   ├── vision/
-│   │   ├── extractor.py
-│   │   ├── cv_analyzer.py
-│   │   └── llm_client.py
 │   ├── codex/
-│   │   ├── parser.py
-│   │   ├── image_extractor.py
-│   │   └── markdown_gen.py
 │   ├── oracle/
-│   │   ├── ephemeris.py
-│   │   ├── chart_engine.py
-│   │   ├── numerology.py
-│   │   └── electional.py
 │   ├── sovereign/
-│   │   ├── dossier_builder.py
-│   │   ├── researcher.py
-│   │   └── synthesis.py
 │   └── resonance/
-│       ├── audio_analyzer.py
-│       ├── lyrics_engine.py
-│       ├── artwork_analyzer.py
-│       └── youtube_fetcher.py
 ├── static/
-├── templates/
+└── templates/
+
+/mnt/ssd/
 ├── vault_output/
 │   ├── vision/
 │   ├── codex/
@@ -276,48 +332,49 @@ SOVEREIGN ───┘         │
 │   ├── video/
 │   ├── books/
 │   └── audio/
-└── scheduler/
-    └── weekly_jobs.py
+├── adguard/
+├── redis/
+└── models/
+    ├── llava-7b-q4.gguf
+    └── mmproj-llava.gguf
+
+/mnt/archive/
+├── video/
+├── books/
+└── audio/
 ```
 
 ---
 
 ## Build Phase Sequence
 
-| Phase | Module | Scope |
-|---|---|---|
-| 1 | Core | Flask server, routing, file upload, Redis queue, progress streaming |
-| 2 | VISION | OpenCV + LLM pipeline + unified markdown output |
-| 3 | CODEX | Book parsing, OCR, WebP image extraction, transcription |
-| 4 | RESONANCE | librosa audio, Whisper lyrics, yt-dlp, artwork analysis |
-| 5 | ORACLE | Swiss Ephemeris, natal charts, numerology, electional calendar |
-| 6 | SOVEREIGN | Dossier builder, research pipeline, synthesis engine |
-| 7 | Scheduler | Weekly automation, living document re-analysis |
-| 8 | Synthesis | Cross-module connections engine, weekly report |
-| 9 | Sync | rclone Google Drive, git versioning |
-
----
-
-## Documentation Standard
-
-All install instructions follow this format:
-- One action per step
-- One command per step
-- No explanation in the command block — context above it only
-- Copy-paste ready
+| Phase | Scope |
+|---|---|
+| 0 | Storage mount — SSD + HDD + static IP assignment |
+| 1 | Docker install + AdGuard Home — network-wide ad blocking live |
+| 2 | Core Flask + Redis + Docker Compose stack |
+| 3 | VISION — OpenCV + LLM pipeline |
+| 4 | CODEX — book parsing, OCR, WebP extraction |
+| 5 | RESONANCE — audio, Whisper, yt-dlp, artwork |
+| 6 | ORACLE — Swiss Ephemeris, charts, numerology |
+| 7 | SOVEREIGN — dossier builder, synthesis |
+| 8 | TV dashboard — responsive read-only layout |
+| 9 | Scheduler — weekly automation |
+| 10 | Cross-module synthesis engine |
+| 11 | rclone sync + git versioning |
 
 ---
 
 ## Open Items
 
-- [ ] RPi5 storage — awaiting `df -h /` output
-- [ ] Pixel network — confirm same WiFi as RPi5
+- [ ] RPi5 subnet — awaiting `ip route` + `hostname -I` output
+- [ ] Router admin access — confirmed or not (required for DNS redirect to AdGuard)
+- [ ] Spare Android model — determines inference capability for RESONANCE
 - [ ] Personal natal chart data — add to ORACLE when ready
-- [ ] Genius API key — optional, for lyrics backup
-- [ ] Seed entity list for SOVEREIGN — expand as research grows
+- [ ] Static IP reservations — set in router once subnet confirmed
 
 ---
 
-*Blueprint version: 3.0*
+*Blueprint version: 4.0*
 *Updated: 2026-05-10*
-*Status: Pre-development — Phase 1 ready to begin once storage confirmed*
+*Status: Pre-development — awaiting subnet confirmation to begin Phase 0*
