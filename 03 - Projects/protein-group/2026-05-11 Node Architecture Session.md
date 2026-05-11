@@ -2,6 +2,7 @@
 title: 2026-05-11 Node Architecture Session
 tags: [session, protein-group, infographic, fractal, nodes, strategy]
 created: 2026-05-11
+last-updated: 2026-05-11
 project: protein-group
 status: growing
 ---
@@ -16,32 +17,50 @@ Three handwritten sketches reviewed:
 
 ---
 
-## Key Corrections & New Intel
+## Key People & Roles
 
-### MOWI & Cooke Aquaculture — DO NOT REMOVE
-Chris delivers smolt (juvenile salmon) for both MOWI and Cooke via land transport on the East Coast of Canada. Senior-level relationships established, including overseas contacts for MOWI. These are not competitors — they are existing trust nodes and potential customers for feed/bait.
+### Chris Bartlett — Visionary / Founder
+- Apex of the leadership triangle and the fractal
+- Delivers smolt for MOWI and Cooke Aquaculture via land transport, East Coast Canada
+- Senior relationships with MOWI including overseas (Scottish freshwater/hatchery team)
+- Company birth chart built around Chris's natal chart = structural irreplaceability
 
-**Strategic play:** Protein Group (via Skretting channel) → positions as premium feed/bait supplier to MOWI and Cooke. Existing relationship = low friction entry.
+### David Arenburg — Strategic Partner / Infrastructure (NOT COO, NOT just Investor)
+**MAJOR UPDATE 2026-05-11:**
+- Owns Canadian Solar
+- Has solar manufacturing plants in China
+- Does government-level business — builds solar infrastructure for governments
+- Has Honduran Ambassador contact
 
-### Investor Phasing
-"Investors can be brought on in phases so the stars align." Investor nodes are not locked — they enter the fractal when the natal chart timing is right.
+**What this means:**
+1. **Energy** — Can power Nicaragua/Honduras operations with solar at cost. Pellet mill, cold storage, pumps, aeration = dramatically reduced operating costs. Potentially off-grid.
+2. **China channel** — Physical manufacturing presence in China = direct distribution infrastructure for Nicaragua–China FTA zero-tariff exports. May eliminate need for a separately created export company.
+3. **Government access** — His solar contracts ARE his government relationships. He delivers infrastructure to sovereign governments. This is the warm door into Honduras (via Ambassador) and potentially Nicaragua.
+4. **Capital** — Investment capacity commensurate with running a solar company with Chinese plants.
 
-### Leadership Triangle (Image 3)
-Protein Group apex node expands into internal leadership fractal:
-- Visionary = Chris
-- CFO = TBD (Bernadette fits this energy — "Grounded")
-- ? = COO / Operations — unfilled
+David is not Investor 2. He is a **Strategic Infrastructure Partner** — the single most powerful node in the structure after Chris.
 
-### Product Sub-Triangle (Image 1)
-Fishing → Products + Bait Fish → Household Food / Fish Meal / Aquaculture Feed
-This is the output layer of the fractal.
+### Bernadette — Investor 1 / Grounded
+- Role: Capital + stability energy
+- Possible CFO fit (TBD)
+- Birthdate needed for synastry
 
-### Red Flags (Image 1)
-- Look at TAXATION ISSUES
-- Nicaragua likes to seize assets — do not build infrastructure you are not willing to sacrifice
+### MOWI — DO NOT REMOVE
+- Global aquaculture giant
+- Chris has senior relationships via smolt delivery
+- Overseas contacts = Scottish freshwater/hatchery team (MOWI has major Scottish operations)
+- Target: feed/bait customer via Skretting channel
 
-### Personal Note (Image 1)
-"Do things with good intentions and a good heart."
+### Cooke Aquaculture — DO NOT REMOVE
+- East Coast Canada operations
+- Chris has existing senior relationship via smolt delivery
+- Target: same feed/bait customer play as MOWI
+
+### FCW / Connors Brothers
+- FCW (Chinese group) potentially acquired Connors Brothers recently
+- Connors contact: Andrew Hartford
+- Canadian seafood infrastructure + Chinese ownership = potential second China distribution channel
+- Confirm acquisition status
 
 ---
 
@@ -49,26 +68,36 @@ This is the output layer of the fractal.
 
 | Row | # Nodes | Who | Theme |
 |-----|---------|-----|-------|
-| 1 | 1 | Protein Group / Chris | Apex — company entity |
-| 2 | 2 | Bernadette (Investor 1), David Arenburg (Investor 2) | Capital layer |
-| 3 | 3 | Nicaragua, Honduras, Costa Rica | Sovereign / HIGH IMPACT GOV'T |
-| 4 | 4 | Skretting, Connors, MOWI, Cooke Aquaculture | Industry partners |
-| 5 | 5 | Bait Fish, Fish Meal, Premium Finfish, Own Logistics Co., Own Export Co. | Outputs |
+| 1 | 1 | Protein Group / Chris | Apex |
+| 2 | 2 | Bernadette, David Arenburg | Capital + Infrastructure |
+| 3 | 3 | Nicaragua, Honduras, Costa Rica | Sovereign layer |
+| 4 | 4 | Skretting, FCW/Connors, MOWI, Cooke | Industry partners |
+| 5 | 5 | Bait Fish, Fish Meal, Premium Finfish, Own Logistics Co., China Export (via David) | Outputs |
 
-Total: 15 nodes. Triangle shape holds.
+### Leadership Triangle (internal — expands from apex node)
+- Visionary = Chris
+- CFO = TBD
+- COO = TBD (needs fishing/aquaculture/export operations background)
 
-### On "Is There a Need for Another Layer?"
-Not yet. 15 nodes = 5 rows = shape intact.
-If MOWI/Cooke each require sub-triangles (as established companies with structure), scale to 21-node (6-row) triangle at that point.
+### Investor Phasing
+Investors brought on in phases as natal chart timing aligns. Nodes show phase/timing status.
+
+---
+
+## Red Flags
+- Nicaragua asset seizure risk — operations yes, fixed infrastructure only if willing to sacrifice
+- Taxation issues — review across all 3 jurisdictions
+- "Do things with good intentions and a good heart."
 
 ---
 
 ## Open Questions
-- [ ] FCW vs Connors Brothers — same entity or separate?
-- [ ] Third leadership node — COO / Operations person identified?
-- [ ] Bernadette's last name and birthdate (for synastry)
-- [ ] David Arenburg birthdate (for synastry)
-- [ ] Company birth window — natal chart timing to be determined
-- [ ] MOWI overseas contacts — who specifically?
-- [ ] Does Skretting/Nutreco already operate in Nicaragua or Honduras?
-- [ ] Taxation structure review needed across all 3 countries
+- [ ] FCW/Connors acquisition — confirm and update node
+- [ ] COO — who? Ideally fishing/aquaculture/export operations background
+- [ ] CFO — Bernadette or separate hire?
+- [ ] Bernadette last name + birthdate (synastry)
+- [ ] David Arenburg birthdate (synastry)
+- [ ] Company birth window — natal chart timing
+- [ ] Does Skretting operate in Nicaragua or Honduras already?
+- [ ] Taxation structure — Nicaragua, Honduras, Costa Rica
+- [ ] David's China plant locations — overlap with FTA export routes?
