@@ -23,7 +23,7 @@ Build a vertically integrated seafood supply chain in Central America (Nicaragua
 
 **This is a generational business. Not a 10-year exit. The community equity model is a competitive moat, not a charity.**
 
-> ⚠️ **Shrimp aquaculture (Phase 3) has been removed from active project scope.** Flagged as a personal future/hobby project for Christopher later in life. Aquamar S.A. still worth monitoring as a benchmark but no longer an active target.
+> ⚠️ **Shrimp aquaculture has been removed from active project scope.** Flagged as a personal future/hobby project for Christopher later in life. Aquamar S.A. still worth monitoring as a benchmark but no longer an active target.
 
 ---
 
@@ -42,14 +42,14 @@ Build a vertically integrated seafood supply chain in Central America (Nicaragua
 The company is built as a **top-down pyramid** — each layer only exists once the layer above it is defined. Fractal: each subsidiary replicates the same triangle structure at its own scale.
 
 ```
-            [Christopher — Visionary / CSO]
-                    /           \
-              [CFO]             [COO]
-             /      \        /       \
-      [Nicaragua] [Honduras] [Costa Rica]
-        /     \      |      \        \
-  [BaitFish] [Fish  [Atlantic [Finfish/ [EU
-             Meal]   Bait]   Pelagics] Export]
+              [Christopher — Visionary / CSO]
+                      /           \
+                [CFO]             [COO]
+               /      \        /       \
+        [Nicaragua] [Honduras] [Costa Rica]
+          /     \      |      \        \
+    [BaitFish] [Fish  [Atlantic [Finfish/ [EU
+               Meal]   Bait]   Pelagics] Export]
 ```
 
 ### Row 1 — Apex
@@ -60,21 +60,44 @@ The company is built as a **top-down pyramid** — each layer only exists once t
 | Seat | Role | Candidate | Notes |
 |---|---|---|---|
 | Vision | Christopher (CSO) | Confirmed | The apex |
-| Anchor | CFO | Dana (primary candidate) | Keeps Christopher grounded. Financial accountability. |
-| Operator | COO | TBD | Executes the vision. Manages physical world: boats, plants, licences, 3 countries. Needs Spanish + Central American ops experience. |
+| Anchor | CFO | **Bernadette (Option A) / Dana (Option B)** | See CFO candidates below |
+| Operator | COO | TBD | On-the-ground execution. Boats, plants, licences, 3 countries. Needs Spanish + Central American ops experience. Open seat — not needed Day 1. |
 
 > The trinity is structurally complete only when all three seats are filled. Two points = a line (dominance risk). Three points = a stable plane.
 
+### CFO Candidates
+| Option | Person | Strengths | Notes |
+|---|---|---|---|
+| **A** | **Bernadette** (Christopher's aunt) | Former Scotia McLeod rep (NB/NS). Now manages a billionaire's private portfolio. Capital markets + investor relations background. | Could also be a bridge to her client as secondary/lead investor. Two separate asks: join the team vs. introduce me to your client. Don't conflate them. |
+| **B** | **Dana** (male) | Former accountant for the Irvings (Irving Oil NB). Owns and runs Atlas Logistics Worldwide. Direct, efficient, no nonsense. | May be better suited as **logistics/distribution partner** rather than CFO — could open his own company to serve the operation's Atlantic Canada distribution. Not yet aware of Central America project. |
+
+> Bernadette = capital markets CFO. Dana = operational finance / logistics operator. They are not the same role.
+
+### David Arenburg — NOT COO
+David's skillset (government relationships, ambassador-level connections, Ottawa-based, infrastructure deals) makes him a **Chief Development / Government & Infrastructure** node — not a day-to-day COO. Placing him at Row 4 as infrastructure + capital + government relations is correct. The COO seat remains open.
+
 ### Row 3 — Geographic Nodes
-- **Nicaragua** — Home base, bait fishing, processing, China export (FTA zero tariff)
-- **Honduras** — Atlantic side, fishmeal plant, Skretting supply, USA/Canada bait
+- **Nicaragua** — Home base. Caribbean side: herring/mackerel seining. Pacific side: tuna/pelagics.
+- **Honduras** — Caribbean/Atlantic side, fishmeal plant, Skretting supply, USA/Canada bait
 - **Costa Rica** — EU-certified export gateway (SENASA certification), finfish and pelagics for European market
 
 ### Row 4 — Product / Market / Infrastructure Layer
-- Bait fish (Nicaragua/Honduras → Canada/USA)
+- Bait fish (Nicaragua/Honduras Caribbean → Canada/USA)
 - Fishmeal + fish oil (Honduras plant → Central American market)
-- Finfish/pelagics (Costa Rica → Europe)
-- **David Arenburg / Canadian Solar** — infrastructure and energy investor at this layer (see below)
+- Tuna/pelagics (Nicaragua Pacific → Japan/Korea/China)
+- Finfish (Costa Rica → Europe)
+- **David Arenburg / Canadian Solar** — infrastructure and energy investor at this layer
+
+---
+
+## ⚠️ CRITICAL GEOGRAPHY — TWO COASTS OF NICARAGUA
+
+| Coast | Species | Vessel Type | Market |
+|---|---|---|---|
+| **Caribbean / Atlantic side** | Herring, mackerel (Atlantic species) | Seiners (Kevin Smith type) | Canada/USA bait market |
+| **Pacific side** | Tuna (yellowfin, skipjack), pelagics | Longliners / smaller vessels 36–50ft (prefer 40ft) | Japan, Korea, China (FTA) |
+
+> ⚠️ There is NO valuable herring or mackerel fishery on the Pacific coast of Nicaragua. Pacific mackerel is a low-value commodity — Canadian/US fishermen are already being undercut by cheaper Pacific mackerel imports. The Atlantic species are what have value. Kevin Smith's seining expertise applies to the **Caribbean side only**.
 
 ---
 
@@ -82,9 +105,10 @@ The company is built as a **top-down pyramid** — each layer only exists once t
 
 | Country | Export Destination | Advantage |
 |---|---|---|
-| Nicaragua | China | FTA zero tariff since Jan 2024 |
+| Nicaragua (Caribbean) | Canada / USA | Herring, mackerel bait |
+| Nicaragua (Pacific) | China / Japan / Korea | Tuna, pelagics — Nicaragua FTA zero tariff to China |
 | Costa Rica | Europe | EU export certification (SENASA) |
-| Honduras | USA / Canada | Atlantic side, proximity |
+| Honduras | USA / Canada | Atlantic side, proximity, fishmeal |
 
 ---
 
@@ -103,59 +127,63 @@ The company is built as a **top-down pyramid** — each layer only exists once t
 ### Tax Strategy
 - **CanadaCo as breakeven entity**: buys fish/bait from Central American OpCos at transfer price that leaves minimal profit in Canada. No profit = no Canadian tax.
 - **Margin captured at PanamaCo level** — money stays in low-tax jurisdiction.
-- **Transfer pricing risk**: CRA is aggressive on related-company transactions. Related = same owner controls both entities. Fix is proper arm's-length documentation, not hiding the relationship. Will need a qualified tax lawyer to set defensible transfer prices.
+- **Transfer pricing risk**: CRA is aggressive on related-company transactions. Related = same owner controls both entities (50%+ voting shares). Fix is proper arm's-length documentation, not hiding the relationship. Need a qualified tax lawyer.
 
 ### 🌱 SEEDED — Unresolved Strategic Question
-> **"The Sacrificial Goat"** — Which entity in the structure operates at breakeven (or near-zero margin) in order to subsidize fishmeal pricing across Central America, allowing the rest of the pyramid to profit? CanadaCo is the current leading candidate (breakeven on bait, no Canadian tax). A dedicated **BuyerCo** model was also discussed (see below). This must be resolved before business plan v4 is finalized.
+> **"The Sacrificial Goat"** — Which entity operates at breakeven to subsidize fishmeal pricing across Central America while the rest of the pyramid profits? CanadaCo is the current leading candidate (breakeven on bait, no Canadian tax). BuyerCo model also discussed. Must be resolved before business plan v4.
 
 ---
 
 ## The BuyerCo / Community Royalty Model (Seeded)
 
-A possible structure for community alignment and government relations:
-
-- **BuyerCo** (Nicaragua or similar) purchases fish from local fishermen at market rate (~$0.25–0.35/lb)
+- **BuyerCo** (Nicaragua) purchases fish from local fishermen at market rate (~$0.25–0.35/lb)
 - Adds **~$0.10/lb community royalty** — paid to government or community fund as a formal agreement
-- Sells to ProcessingCo at cost + royalty
-- BuyerCo runs at breakeven by design
-- Government receives royalty → has financial stake in your volume → becomes an ally, not just a regulator
+- Sells to ProcessingCo at cost + royalty. BuyerCo runs at breakeven.
+- Government receives royalty → financial stake in your volume → becomes an ally, not a regulator
 - ProcessingCo and DistributionCo capture the profit
-
-> This model aligns with the generational / community equity philosophy and provides political protection competitors cannot easily replicate.
 
 ---
 
 ## David Arenburg — Canadian Solar / Infrastructure Angle
 
-- David Arenburg (DAI Group, Ottawa) — friend, anchor investor, adviser
-- Owns / connected to **Canadian Solar** — does 250kW+ infrastructure projects
-- **Solar angle for fishmeal plant**: fishmeal production is energy-intensive (drying, cooking). Solar infrastructure brings energy cost to near zero.
+- David Arenburg (DAI Group, Ottawa) — friend, anchor investor, adviser. DEFAULT "David" = this person.
+- Connected to **Canadian Solar** — does 250kW+ infrastructure projects
+- **Solar angle**: fishmeal production is energy-intensive. Solar brings energy cost to near zero.
 - Target production cost with solar: **$600–900/tonne** vs $1,992/tonne global benchmark
-- David's potential structure: owns the solar infrastructure, leases power to the plant = equity in energy assets as his "kickback" / return
-- David currently knows **Phase 1 only**. Does not know full Central America scope or vertical integration vision.
-- Business plan currently at v3. Working toward v4.
+- David's structure: owns solar infrastructure, leases power to plant = equity in energy assets as return
+- Currently knows **Phase 1 only**. Does not know full scope or vertical integration vision.
+- Business plan at v3. Working toward v4.
+- Has connection to **Honduran Ambassador** — key workaround for Honduras regulatory barriers.
 
 ---
 
 ## Geography
 
-**Primary: Nicaragua (Pacific side)**
-- Base of operations: Estero Real / Corinto fishing port
-- Processing → Managua trucking hub
-- Export: Puerto Corinto → Saint John NB / US East Coast / China (FTA)
+**Primary: Nicaragua**
 
-**Secondary: Honduras (Atlantic/Caribbean side)**
+*Caribbean / Atlantic side:*
 - Target species: Atlantic herring, Atlantic mackerel
-- Processing hub candidate: San Lorenzo / Puerto Cortés
+- Vessel type: Seiners (Kevin Smith / Connors Brothers type)
+- Market: Canada/USA bait buyers
+
+*Pacific side:*
+- Target species: Yellowfin tuna, skipjack, pelagics
+- Vessel type: Longliners, 36–50ft (prefer 40ft)
+- Market: Japan, Korea, China (zero tariff FTA)
+- Export port: Puerto Corinto
+
+**Secondary: Honduras (Caribbean/Atlantic side)**
+- Atlantic herring, Atlantic mackerel
 - Fishmeal plant target location
-- Regulatory barriers exist (foreign captain prohibition, majority local ownership required) BUT David Arenburg has a relationship with the Honduran Ambassador — this is the workaround angle
-- Honduras withdrew from ICSID (international arbitration) August 2024 — risk factor
+- Processing hub: San Lorenzo / Puerto Cortés
+- Regulatory barriers — foreign captain prohibition, majority local ownership — David's ambassador connection is the workaround
+- Honduras withdrew from ICSID August 2024 — risk factor
 - ZIP zone: 20-year corporate tax exemption
 
 **Tertiary: Costa Rica**
-- EU export certification (SENASA food safety) — gateway to European market
-- Finfish and pelagics focus
-- Keep entirely separate from Nicaragua conversations with governments
+- EU export certification (SENASA food safety)
+- Finfish and pelagics for European market
+- Keep entirely separate from Nicaragua government conversations
 
 ---
 
@@ -164,43 +192,46 @@ A possible structure for community alignment and government relations:
 ### The Inner Circle
 | Name | Role | Notes |
 |---|---|---|
-| **Christopher Bartlett** | Founder / CSO / Visionary | 11 years lobster fishing. Deep network in Maritime seafood industry. |
-| **David Arenburg** (DAI Group, Ottawa) | Strategic investor / adviser / Canadian Solar | Knows Phase 1 only. Has Honduran Ambassador connection. DEFAULT "David" = this person. NOT David D'Senzo. |
-| **Dana** | CFO candidate | Former Irving Oil accountant. JJ's current CFO. Atlas Logistics Worldwide. Organized, systems thinker, aligned with Christopher. Knows about JJ friction. Does NOT know about Central America project yet. |
+| **Christopher Bartlett** | Founder / CSO / Visionary | 11 years lobster fishing. Deep Maritime network. |
+| **David Arenburg** (DAI Group, Ottawa) | Strategic investor / adviser / Gov & Infrastructure | Knows Phase 1 only. Ambassador connections. DEFAULT "David." NOT David D'Senzo. |
+| **Bernadette** (Christopher's aunt) | CFO candidate A | Former Scotia McLeod rep NB/NS. Manages billionaire's portfolio. Capital markets background. Potential investor bridge. |
+| **Dana** (**male**) | CFO candidate B / Logistics partner | Former Irving Oil accountant. Owns Atlas Logistics Worldwide. Direct, efficient. May fit better as distribution partner than CFO. Does NOT know about Central America project yet. |
 
 ### Industry Network — Fishing / Vessels
 | Name | Role | Notes |
 |---|---|---|
-| **Kevin Smith** | Captain, F/V Leroy and Barry (Connors Brothers) | Main herring seining contact. PRIMARY vessel relationship. |
+| **Kevin Smith** | Captain, F/V Leroy and Barry (Connors Brothers) | Main herring seining contact. Atlantic/Caribbean side expertise. PRIMARY vessel relationship. |
 | **Jack O'Neil** | Herring seiner captain | Contact |
 | **Devin O'Neil** | Herring seiner captain | Contact |
 | **Andrew Hartford** | Management, Connors Brothers Ltd | Former babysitter — personal entry point to FCF/Connors |
+| **Dwayne Beliveau** | Owner, Charlseville Fisheries (East Pubnico, NS) | ~5 fish draggers. Christopher has prior relationship via lobster buying company. Dwayne knows Christopher's face. Another vessel sourcing angle. |
 
 ### Buyers — Bait Market
 | Name | Company | Market | Notes |
 |---|---|---|---|
-| **Chris Polumbo** | (Polumbo family business) | USA | Recently took over from father William Polumbo. Locking him in = entire US bait market. Ready to contact. |
-| **Mike Beardsley** | Coldwater [something], Dipper Harbour NB | Canada | Direct buyer. Has cold storage facility. Distribution candidate. |
+| **Chris Polumbo** | (Polumbo family business) | USA | Recently took over from father William. Ready to contact. |
+| **Mike Beardsley** | Coldwater [something], Dipper Harbour NB | Canada | Direct buyer. Cold storage facility. Distribution candidate. |
 | **Can-Am Bait** | — | Canada | Direct buyer |
 | **Kapolei Bait** | — | Canada | Direct buyer |
-| **Poirier Fish** | — | Canada | Unknown contact — needs vetting via lobster network. Seems ideologically aligned. |
+| **Poirier Fish** | — | Canada | Needs vetting via lobster network. |
 
 ### Feed / Processing Partners
 | Name | Company | Role | Notes |
 |---|---|---|---|
-| **Steve Penny** | Skretting (Nutreco) | Senior exec | Childhood friend. HIGH VALUE. Skretting has production facility in Honduras. They NEED local fishmeal raw material — make them a customer. |
+| **Steve Penny** | Skretting (Nutreco) | Senior exec | Childhood friend. HIGH VALUE. Honduras facility needs local fishmeal. Make them a customer. |
 
 ### Strategic Corporate Partners
 | Company | Owner | Contact | Angle |
 |---|---|---|---|
-| **Connors Brothers Ltd** (Blacks Harbour, NB) | FCF Co. (Taiwan) | Andrew Hartford | Sold their weirs — fleet underutilized. Pitch: lease seiner capacity, fish Nicaragua, ship to Canada/Taiwan. |
-| **Canadian Solar** | David Arenburg (connected) | David Arenburg | 250kW+ projects. Solar infrastructure for fishmeal plant. |
-| **Aquamar S.A.** | — | TBD | Active shrimp farm, Estero Real near El Viejo. Benchmark only — shrimp operation no longer in active scope. |
+| **Connors Brothers Ltd** (Blacks Harbour, NB) | FCF Co. (Taiwan) | Andrew Hartford | Fleet underutilized. Lease seiner capacity, fish Caribbean Nicaragua. |
+| **Charlseville Fisheries** (East Pubnico, NS) | Dwayne Beliveau | Dwayne Beliveau | ~5 fish draggers. Christopher has prior relationship. Vessel sourcing. |
+| **Canadian Solar** | David Arenburg (connected) | David Arenburg | 250kW+ projects. Solar for fishmeal plant. |
+| **Aquamar S.A.** | — | TBD | Shrimp farm benchmark only. No longer active target. |
 
 ### People NOT to partner with (for now)
 | Name | Why |
 |---|---|
-| **JJ** (Christopher's current employer) | Does not trust Christopher despite Christopher running operations solo. Do NOT bring into this project. |
+| **JJ** | Does not trust Christopher. Do NOT bring into this project. |
 
 ---
 
@@ -208,9 +239,9 @@ A possible structure for community alignment and government relations:
 
 | Company | Threat Level | Notes |
 |---|---|---|
-| **Cargill** | HIGH | BAP-certified feed plants in Honduras + Nicaragua. Direct competitor for feed supply contracts. |
-| **Skretting (Nutreco)** | PARTNER | Needs local fishmeal raw material. Target as customer via Steve Penny. |
-| **Seajoy Group** | Benchmark | Dominant integrated shrimp producer in Honduras + Nicaragua. BAP certified. |
+| **Cargill** | HIGH | BAP-certified feed plants Honduras + Nicaragua. Direct competitor. |
+| **Skretting (Nutreco)** | PARTNER | Needs local fishmeal raw material. Target via Steve Penny. |
+| **Seajoy Group** | Benchmark | Dominant integrated shrimp producer Honduras + Nicaragua. |
 | **FCF / Connors Brothers** | Strategic Partner | Risk: could replicate model. Lock in offtake agreements early. |
 
 ---
@@ -220,7 +251,7 @@ A possible structure for community alignment and government relations:
 | Product | Price | Source |
 |---|---|---|
 | Peruvian fishmeal (global benchmark) | ~$1,992/tonne | FRED/IMF March 2026 |
-| Christopher's fishmeal target cost (with solar) | $600–900/tonne | Internal estimate |
+| Christopher's fishmeal target (with solar) | $600–900/tonne | Internal estimate |
 | Atlantic mackerel bait (Cap-Pelé NB) | ~$2.40/lb | Market data |
 | Korean/Pacific substitute mackerel | ~$1.40/lb | Market data |
 | Christopher's bait production cost estimate | $0.35–0.50/lb | Internal estimate |
@@ -230,11 +261,11 @@ A possible structure for community alignment and government relations:
 
 ## Supply Gap — Why Now
 
-- **Atlantic mackerel**: Canadian commercial fishery closed since 2022. DFO moratorium ongoing.
-- **US herring**: ACL cut 89% in a single year (2025).
-- **Peruvian fishmeal**: Lower supply expected H1 2026. Prices at historic highs.
-- **Nicaragua–China FTA**: Zero tariffs effective January 2024. Underutilized by most operators.
-- **Central America fishmeal import dependency**: Region imports 100% of fishmeal from Peru/Chile. Christopher can produce locally at fraction of cost.
+- **Atlantic mackerel**: Canadian commercial fishery closed since 2022. DFO moratorium continues. Rebuilding timeline potentially 18 years (to ~2042).
+- **US herring**: ACL cut ~89% in a single year. 2025 ACL (2,710mt) is lowest in fishery history. Rebuilding target ~2031 (50% probability).
+- **Peruvian fishmeal**: Near historic highs. Lower supply expected H1 2026.
+- **Nicaragua–China FTA**: Zero tariffs effective January 2024. Underutilized.
+- **Pacific mackerel scam**: Canadian/US bait fishermen being undercut by cheap Pacific mackerel imports (~$1.40/lb vs $2.40/lb Atlantic). Atlantic species command a real premium.
 
 ---
 
@@ -248,57 +279,61 @@ A possible structure for community alignment and government relations:
 - ICSID arbitration: available
 
 **Honduras:**
-- Foreign captain prohibition (law) — requires workaround
-- Majority local ownership required in commercial fishing
-- ICSID withdrew August 2024
+- Foreign captain prohibition — requires workaround
+- Majority local ownership required
+- ICSID withdrew August 2024 — risk factor
 - ZIP zone: 20-year corporate tax exemption
-- David's ambassador connection = potential path through
+- David's ambassador connection = key path through
 
 **Vessel Strategy (Canadian boats):**
 - Bareboat charter: Nicaraguan company charters vessel from Canadian owner
-- OR: Re-flag vessel to Nicaragua for duration of operation
+- OR: Re-flag vessel to Nicaragua for duration
 - Needs Nicaraguan maritime lawyer + immigration attorney
 
 ---
 
 ## Distribution Plan (Canada)
 
-- **One main port hub**: Saint John NB
-- **Cold storage**: Mike Beardsley (Dipper Harbour) as potential partner
+- **Port hub**: Saint John NB
+- **Cold storage**: Mike Beardsley (Dipper Harbour)
 - **Trucks**: Dana's Atlas Logistics network (do NOT involve JJ)
-- **CanadaCo**: breakeven entity, no Canadian tax exposure
+- **CanadaCo**: breakeven entity, no Canadian tax
 
 ---
 
 ## What David Arenburg Knows
 
 - Phase 1 only: bait fishing operation concept
-- Does NOT know full scope of vertical integration / Central America vision / solar angle
-- Business plan currently at v3. Working toward v4.
+- Does NOT know full scope, vertical integration, solar angle, or full Central America vision
+- Business plan at v3. Working toward v4.
 
 ---
 
 ## Open Items / Next Steps
 
+- [ ] Call Kevin Smith — 30 min. Get Caribbean side seiner production numbers. Feel out interest.
+- [ ] Reach out to Dwayne Beliveau (Charlseville Fisheries) — vessel sourcing conversation
 - [ ] Reach out to Chris Polumbo — informal offtake conversation
-- [ ] Vet Poirier Fish via lobster network contacts
-- [ ] Research bareboat charter + skilled foreign worker permit process (Nicaragua)
-- [ ] Honduras Atlantic coast regulatory deep dive — herring/mackerel specific
+- [ ] Vet Poirier Fish via lobster network
+- [ ] Research bareboat charter + skilled foreign worker permit (Nicaragua)
+- [ ] Honduras Caribbean coast regulatory deep dive
 - [ ] Confirm Mike Beardsley's Coldwater company full name
-- [ ] Container freight rate: Nicaragua → Atlantic Canada (refrigerated)
+- [ ] Container freight rate: Caribbean Nicaragua → Atlantic Canada (refrigerated)
 - [ ] Determine Skretting Honduras raw material needs — open door via Steve Penny
 - [ ] Engage tax lawyer re: transfer pricing documentation (CanadaCo ↔ PanamaCo)
-- [ ] Resolve "Sacrificial Goat" question — which entity subsidizes fishmeal pricing?
-- [ ] Build competitor analysis section for business plan v4
-- [ ] Approach Dana re: CFO role
+- [ ] Resolve "Sacrificial Goat" question
+- [ ] Build competitor analysis for business plan v4
+- [ ] Approach Bernadette — determine CFO vs investor-bridge ask first
+- [ ] Approach Dana — logistics partner conversation
 - [ ] Identify COO candidate (Spanish-speaking, Central American ops experience)
-- [ ] Costa Rica — confirm EU SENASA certification scope and species covered
-- [ ] David Arenburg — determine right moment to expand his view beyond Phase 1
+- [ ] Costa Rica — confirm EU SENASA certification scope and species
+- [ ] David Arenburg — determine right moment to expand beyond Phase 1
+- [ ] Plan dashboard/infographic web page for project visualization
 
 ---
 
 ## New Tags to Add to _TOE Tagging Standard.md
-- `herring` `mackerel` `bait-fish` `fishmeal` `fish-oil` `honduras` `vessel-operations` `offtake` `community-equity` `distribution` `supply-chain` `transfer-pricing` `tax-structure` `panama` `corporate-structure` `sacred-geometry` `sacrificial-goat` `canadian-solar` `costa-rica` `eu-export`
+- `herring` `mackerel` `bait-fish` `fishmeal` `fish-oil` `honduras` `vessel-operations` `offtake` `community-equity` `distribution` `supply-chain` `transfer-pricing` `tax-structure` `panama` `corporate-structure` `sacred-geometry` `sacrificial-goat` `canadian-solar` `costa-rica` `eu-export` `tuna` `longliner` `seiner` `caribbean` `pacific`
 
 ---
 *Last updated: 2026-05-16. Update this file at the end of every session or when facts change.*
