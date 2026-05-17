@@ -22,6 +22,7 @@ The `inbox/conversations/` folder on the RPi5 SSD is for dropping in future raw 
 | 2026-05-11 | NUMEROLOGY-VAULT-INTEGRATION | ORACLE | Medium | numerology, vault-integration |
 | 2026-05-11 | OBSIDIAN-EXTERNAL-DRIVE | CODEX | Medium | obsidian, storage, rpi5 |
 | 2026-05-12 | PLATFORM-BUILD-SESSION-1 | VISION | High | rpi5, docker, infrastructure |
+| 2026-05-17 | MASTER-PROJECT-SESSION-LOGGING | SOVEREIGN | High | master-project, session-logging, vault-policy, bootstrap |
 
 ---
 
@@ -32,7 +33,8 @@ The `inbox/conversations/` folder on the RPi5 SSD is for dropping in future raw 
 - TOE vault as single source of truth
 - RPi5 as local private intelligence platform
 - Protein Group business development with astrology/numerology timing
+- **All conversations logged every session (policy: 2026-05-17)**
 
 ---
 
-*Last updated: 2026-05-12*
+*Last updated: 2026-05-17*
