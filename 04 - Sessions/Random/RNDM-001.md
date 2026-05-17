@@ -23,6 +23,36 @@ Same word, same root. Greek *khrisma* = "an anointing." Greek *Khristos* = "the 
 
 **Routed to:**
 - `03 - Projects/Astrology/` → Chapter 15 (The Ancient Clock) seed — the 3-day stillness as the book's argument in miniature
-- `03 - Projects/Esoteric-Library/` → New thread to be built: Sacred Secretion / Christ Oil deep reference file
+- `03 - Projects/Esoteric-Library/` → New thread: Sacred Secretion / Christ Oil deep reference file
+
+---
+
+## Entry 002 — 2026-05-17
+**Tags:** #astrology #esoteric-library #sacred-secretion #christ-oil #anointing #personal-experience #initiation #kundalini #conditions-for-contact #chapter-15 #north-node #12th-house
+
+**Raw experience (Christopher's account):**
+~4–5 years ago. Experienced extreme anxiety, like freaking out, didn't know what was happening. Then: warm oil sensation from head to toe. Impression received: "calm down, relax." Didn't understand it at the time. Now recognizes it as the anointing — the sacred secretion completing its cycle.
+
+**Key points established:**
+- Anxiety before the resolution is consistent across all traditions describing this event (kundalini crisis, Pentecostal accounts, mystical literature)
+- The warmth = the substance reaching the crown and completing the journey
+- The message ("calm down, relax") = not information or vision, but the quality of grace itself — *I have you. You're safe.*
+- Christopher has confirmed, through lived experience, that the anointing is real and not theoretical
+
+**What Anointing Means:**
+- Hebrew: *Mashiach* (Messiah) = the anointed one
+- Greek: *Khristos* (Christ) = the anointed one
+- Three classes anointed in antiquity: kings, priests, prophets
+- Oil = substance of light (burns to give light), preservation, consecration
+- External ritual (priest pours oil) = symbol pointing to the internal event
+- The internal event = the sacred secretion completing its cycle; the body registers it as warmth, then peace
+
+**The question the tradition asks next:**
+*What are you being set apart for?*
+→ Connects directly to Pisces North Node (7th House) and Leo Sun in 12th House — both pointing outward, toward service and transmission, not inward refinement.
+
+**Routed to:**
+- `03 - Projects/Astrology/` → Chapter 15 anchor (alongside parking lot experience and grandmother vision) + Chapter 10 (Lilith/Nodes — the "set apart for what?" question)
+- `03 - Projects/Esoteric-Library/Sacred Secretion — Christ Oil.md` → Add personal experience section; add anxiety-before-resolution pattern
 
 ---
