@@ -2,7 +2,7 @@
 title: _MASTER BRIEFING — Nicaragua Project
 tags: [project, nicaragua, seafood, supply-chain, reference, overview, fishmeal, tax-structure, corporate-structure]
 created: 2026-05-16
-last-updated: 2026-05-16
+last-updated: 2026-05-17
 project: nicaragua-project
 status: evergreen
 ---
@@ -69,7 +69,7 @@ The company is built as a **top-down pyramid** — each layer only exists once t
 | Option | Person | Strengths | Notes |
 |---|---|---|---|
 | **A** | **Bernadette** (Christopher's aunt) | Former Scotia McLeod rep (NB/NS). Now manages a billionaire's private portfolio. Capital markets + investor relations background. | Could also be a bridge to her client as secondary/lead investor. Two separate asks: join the team vs. introduce me to your client. Don't conflate them. |
-| **B** | **Dana** (male) | Former accountant for the Irvings (Irving Oil NB). Owns and runs Atlas Logistics Worldwide. Direct, efficient, no nonsense. | May be better suited as **logistics/distribution partner** rather than CFO — could open his own company to serve the operation's Atlantic Canada distribution. Not yet aware of Central America project. |
+| **B** | **Dana** (male) | Former accountant for the Irvings (Irving Oil NB). Owns and runs Atlas Logistics Worldwide. Direct, efficient, no nonsense. | May be better suited as **logistics/distribution partner** rather than CFO — could open his own company to serve the operation's Atlantic Canada distribution. Not yet aware of Central America project yet. |
 
 > Bernadette = capital markets CFO. Dana = operational finance / logistics operator. They are not the same role.
 
@@ -267,6 +267,10 @@ David's skillset (government relationships, ambassador-level connections, Ottawa
 - **Nicaragua–China FTA**: Zero tariffs effective January 2024. Underutilized.
 - **Pacific mackerel scam**: Canadian/US bait fishermen being undercut by cheap Pacific mackerel imports (~$1.40/lb vs $2.40/lb Atlantic). Atlantic species command a real premium.
 
+### 🎯 HERO STAT FOR DASHBOARD / PRESENTATION
+> **"A fishery that once produced over 300,000 metric tonnes — 661 million pounds — annually. Now effectively zero."**
+> Use this as the gut-punch opening number. Large display font, top of page. No chart needed — the number tells the story. Then show the decline chart beneath it.
+
 ---
 
 ## Legal / Regulatory Structure
@@ -312,7 +316,7 @@ David's skillset (government relationships, ambassador-level connections, Ottawa
 ## Open Items / Next Steps
 
 - [ ] Call Kevin Smith — 30 min. Get Caribbean side seiner production numbers. Feel out interest.
-- [ ] Reach out to Dwayne Beliveau (Charlseville Fisheries) — vessel sourcing conversation
+- [ ] Call Dwayne Beliveau (Charlseville Fisheries) — vessel sourcing conversation. Prior relationship = warm call.
 - [ ] Reach out to Chris Polumbo — informal offtake conversation
 - [ ] Vet Poirier Fish via lobster network
 - [ ] Research bareboat charter + skilled foreign worker permit (Nicaragua)
@@ -328,7 +332,7 @@ David's skillset (government relationships, ambassador-level connections, Ottawa
 - [ ] Identify COO candidate (Spanish-speaking, Central American ops experience)
 - [ ] Costa Rica — confirm EU SENASA certification scope and species
 - [ ] David Arenburg — determine right moment to expand beyond Phase 1
-- [ ] Plan dashboard/infographic web page for project visualization
+- [ ] Build dashboard / infographic web page for project visualization (hero stat: 661M lbs)
 
 ---
 
@@ -336,4 +340,4 @@ David's skillset (government relationships, ambassador-level connections, Ottawa
 - `herring` `mackerel` `bait-fish` `fishmeal` `fish-oil` `honduras` `vessel-operations` `offtake` `community-equity` `distribution` `supply-chain` `transfer-pricing` `tax-structure` `panama` `corporate-structure` `sacred-geometry` `sacrificial-goat` `canadian-solar` `costa-rica` `eu-export` `tuna` `longliner` `seiner` `caribbean` `pacific`
 
 ---
-*Last updated: 2026-05-16. Update this file at the end of every session or when facts change.*
+*Last updated: 2026-05-17. Update this file at the end of every session or when facts change.*
