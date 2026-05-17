@@ -27,6 +27,7 @@ To anoint = to set apart. To mark as carrying something now that wasn't there be
 The external ritual (priest pours oil on the head) was always understood in the deeper tradition as a symbol pointing to an internal event. The real anointing is the secretion completing its journey and reaching the crown.
 
 **The question anointing always raises:** *What are you being set apart for?*
+Note: the anointing comes *before* the assignment, not after. Clarity follows the experience — sometimes much later. Not knowing yet is part of the pattern.
 
 ---
 
@@ -49,10 +50,14 @@ Consistent across traditions (kundalini accounts, Pentecostal testimony, mystica
 
 This sequence is the pattern. The anxiety is not a sign something went wrong — it is part of the process.
 
-### Christopher's Account (c. 2021–2022)
+### Christopher's Account (c. 2021–2022) — The Anointing
+**Confirmed: the parking lot warmth experience and this anointing are the same event, not two separate occurrences.**
+
 Experienced extreme anxiety, not knowing what was happening. Then: a warm oil sensation moving from head to toe. Impression received: *"calm down, relax."* Did not understand it at the time. Recognized in retrospect as the anointing — the sacred secretion completing its cycle and the body registering the event.
 
-This is a confirmed first-person anchor for the esoteric framework. The experience preceded any intellectual knowledge of the tradition — which is significant. It was not induced by belief or expectation.
+This is a confirmed first-person anchor for the esoteric framework. The experience preceded any intellectual knowledge of the tradition — which is significant. It was not induced by belief or expectation. Verification, not projection.
+
+What comes next (the "set apart for") remains open — deliberately and appropriately so.
 
 ---
 
@@ -87,7 +92,7 @@ Operates simultaneously at cosmic, calendrical, and cellular scale. Same myth, d
 - The ~2.5-day Moon-in-Leo window already identified as the "sacred window" for spiritual contact
 - Conditions for contact (fasting, continence, reduced stimulants) = conditions for the secretion to rise rather than be consumed
 - **This is the biological mechanism behind the sacred window already discovered in practice**
-- Christopher's anointing experience (~2021–2022) + parking lot warmth experience + grandmother vision = three experiential anchors for the same underlying process
+- Christopher's anointing (parking lot, c. 2021–2022) + grandmother vision = two confirmed experiential anchors for Chapter 15
 
 → See: `03 - Projects/Astrology/Project Index.md` — Sacred window, Chapter 15 seed
 
@@ -106,6 +111,6 @@ Operates simultaneously at cosmic, calendrical, and cellular scale. Same myth, d
 - What is the precise anatomical substance being described — CSF, a hormone, or something else entirely?
 - How does the Equinox (not just Solstice) relate to the 3-day pattern?
 - Where else does the 3-day pattern appear that hasn't been catalogued yet?
-- What does "set apart for" mean in Christopher's specific case — what is the anointing pointing toward?
+- What does "set apart for" mean in Christopher's specific case — this remains open and will reveal itself in time
 
 ---
