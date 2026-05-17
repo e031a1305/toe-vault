@@ -33,26 +33,38 @@ Same word, same root. Greek *khrisma* = "an anointing." Greek *Khristos* = "the 
 **Raw experience (Christopher's account):**
 ~4–5 years ago. Experienced extreme anxiety, like freaking out, didn't know what was happening. Then: warm oil sensation from head to toe. Impression received: "calm down, relax." Didn't understand it at the time. Now recognizes it as the anointing — the sacred secretion completing its cycle.
 
+**Correction (same session):** The parking lot warmth experience and this anointing are the same event — not two separate occurrences. Two anchors for Chapter 15: the anointing, and the grandmother vision.
+
 **Key points established:**
-- Anxiety before the resolution is consistent across all traditions describing this event (kundalini crisis, Pentecostal accounts, mystical literature)
+- Anxiety before the resolution is consistent across all traditions describing this event
 - The warmth = the substance reaching the crown and completing the journey
-- The message ("calm down, relax") = not information or vision, but the quality of grace itself — *I have you. You're safe.*
-- Christopher has confirmed, through lived experience, that the anointing is real and not theoretical
-
-**What Anointing Means:**
-- Hebrew: *Mashiach* (Messiah) = the anointed one
-- Greek: *Khristos* (Christ) = the anointed one
-- Three classes anointed in antiquity: kings, priests, prophets
-- Oil = substance of light (burns to give light), preservation, consecration
-- External ritual (priest pours oil) = symbol pointing to the internal event
-- The internal event = the sacred secretion completing its cycle; the body registers it as warmth, then peace
-
-**The question the tradition asks next:**
-*What are you being set apart for?*
-→ Connects directly to Pisces North Node (7th House) and Leo Sun in 12th House — both pointing outward, toward service and transmission, not inward refinement.
+- The message ("calm down, relax") = not information or vision, but grace itself
+- Preceded any intellectual framework — verification, not projection
 
 **Routed to:**
-- `03 - Projects/Astrology/` → Chapter 15 anchor (alongside parking lot experience and grandmother vision) + Chapter 10 (Lilith/Nodes — the "set apart for what?" question)
-- `03 - Projects/Esoteric-Library/Sacred Secretion — Christ Oil.md` → Add personal experience section; add anxiety-before-resolution pattern
+- `03 - Projects/Astrology/` → Chapter 15 anchor + Chapter 10 (Lilith/Nodes)
+- `03 - Projects/Esoteric-Library/Sacred Secretion — Christ Oil.md`
+
+---
+
+## Entry 003 — 2026-05-17
+**Tags:** #astrology #esoteric-library #protein-group #anointing #king #prophet #priest #three-offices #north-node #12th-house #book #calling
+
+**Raw thought:**
+Christopher made the connection unprompted: the three anointed offices map onto his actual life.
+
+- **King** — protein-group; taking territory for the people, building something that serves beyond himself. Territory given, not seized.
+- **Prophet** — people coming to him for advice; something moving through him that others orient by. He named this, then pulled back ("I don't want to get too big of a head").
+- **Priest** — not named. Likely the book — mediating between the human and the divine, making the invisible legible, holding the teaching space.
+
+**Key observation:**
+The humility at the end is the check that keeps all three functional. He is not in the "big head" failure mode — people in that mode don't worry about it. The Virgo Moon doing healthy work: integrity in the system, not self-sabotage.
+
+The anointing comes before the assignment. Not knowing the full shape of it yet is appropriate and expected.
+
+**Routed to:**
+- `03 - Projects/Astrology/` → Chapter 10 (Lilith/Nodes — calling, what set apart means) + Chapter 15 (the anointing as the hinge point)
+- `03 - Projects/Esoteric-Library/Sacred Secretion — Christ Oil.md` → The three offices as the answer to "set apart for what?"
+- `03 - Projects/protein-group/` → Flag: the king framing is worth holding as the project's deeper context
 
 ---
