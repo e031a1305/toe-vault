@@ -2,7 +2,7 @@
 title: _MASTER BRIEFING — Protein Group (Nicaragua Project)
 tags: [protein-group, seafood, supply-chain, reference, overview, fishmeal, tax-structure, corporate-structure, nicaragua, honduras, costa-rica]
 created: 2026-05-16
-last-updated: 2026-05-17
+last-updated: 2026-05-18
 project: protein-group
 status: evergreen
 ---
@@ -31,7 +31,7 @@ Build a vertically integrated seafood supply chain in Central America (Nicaragua
 
 | Phase | Focus | Status |
 |---|---|---|
-| 1 | Bait fishing operation — get boats in water, sell to Polumbo (USA) + Beardsley (Canada) | Pitching to David Arenburg |
+| 1 | Bait fishing operation — get boats in water, sell to Polumbo (USA) + Bairdsley (Canada) | Pitching to David Arenburg |
 | 2 | Fishmeal/fish oil processing plant — supply Central American market, target Skretting Honduras | Planning |
 | 3 | Vertical integration — own boats, processing, distribution | Long-term |
 
@@ -118,7 +118,7 @@ David's skillset (government relationships, ambassador-level connections, Ottawa
 | Entity | Jurisdiction | Function | Tax Treatment |
 |---|---|---|---|
 | HoldCo / Treasury | **Panama** | Owns all subsidiaries, captures margin | Low tax, Canal access, clean jurisdiction |
-| CanadaCo | Canada | Sells bait to Canadian buyers (Beardsley, Can-Am, Kapolei) | **Breakeven by design — no Canadian tax** |
+| CanadaCo | Canada | Sells bait to Canadian buyers (Bairdsley, Can-Am, Kapolei) | **Breakeven by design — no Canadian tax** |
 | NicaraguaOpCo | Nicaragua | Fishing, processing, China export | FTZ — 100% income tax exempt 10 years |
 | HondurasOpCo | Honduras | Fishmeal plant, Atlantic bait | ZIP zone — corporate tax exempt 20 years |
 | CostaRicaOpCo | Costa Rica | Finfish/pelagics, EU cold chain | TBD |
@@ -147,11 +147,12 @@ David's skillset (government relationships, ambassador-level connections, Ottawa
 
 - David Arenburg (DAI Group, Ottawa) — friend, anchor investor, adviser. DEFAULT "David" = this person.
 - Connected to **Canadian Solar** — does 250kW+ infrastructure projects
-- **Solar angle**: fishmeal production is energy-intensive. Solar brings energy cost to near zero.
+- **Solar angle**: fishmeal plant is the primary ROI target for solar infrastructure — not bait boats. Plant runs 24/7; dryer accounts for 60–70% of power draw.
 - Target production cost with solar: **$600–900/tonne** vs $1,992/tonne global benchmark
 - Currently knows **Phase 1 only**. Does not know full scope or vertical integration vision.
-- Business plan at v3. Working toward v4.
+- Business plan at **v4** as of 2026-05-18.
 - Has connection to **Honduran Ambassador** — key workaround for Honduras regulatory barriers.
+- Plant location and scale to be discussed with David — infrastructure deployment drives location decision.
 
 ---
 
@@ -178,7 +179,7 @@ David's skillset (government relationships, ambassador-level connections, Ottawa
 | Name | Company | Market | Notes |
 |---|---|---|---|
 | **Chris Polumbo** | (Polumbo family business) | USA | Recently took over from father William. Ready to contact. |
-| **Mike Beardsley** | Coldwater [something], Dipper Harbour NB | Canada | Direct buyer. Cold storage facility. Distribution candidate. |
+| **Mike Bairdsley** | Coldwater [something], Dipper Harbour NB | Canada | Direct buyer. Cold storage facility. Distribution candidate. |
 | **Can-Am Bait** | — | Canada | Direct buyer |
 | **Kapolei Bait** | — | Canada | Direct buyer |
 | **Poirier Fish** | — | Canada | Needs vetting via lobster network. |
@@ -204,7 +205,25 @@ David's skillset (government relationships, ambassador-level connections, Ottawa
 | Atlantic mackerel bait (Cap-Pelé NB) | ~$2.40/lb |
 | Korean/Pacific substitute mackerel | ~$1.40/lb |
 | Christopher's bait production cost estimate | $0.35–0.50/lb |
+| Buyer target price (Polumbo / Bairdsley) | $1.00–$1.50/lb |
 | **Bait margin opportunity** | **$0.90–$1.90/lb** |
+
+---
+
+## Market Context — Atlantic Fishery Collapse (May 2026)
+
+The North Atlantic fishery is in broad managed contraction. This is not isolated to herring and mackerel.
+
+- **Canadian mackerel** — commercial moratorium since 2022. 440t bait-only allocation in 2025. Rebuilding target: ~2042.
+- **US Atlantic herring** — 2025 ACL at 2,710 mt, lowest in FMP history. 89% cut vs projected baseline. Rebuilding target: 2031 (50% probability).
+- **2026 Maritimes groundfish quota cuts (DFO):**
+  - Haddock 5Z (Georges Bank): cut 36% for 2026–27
+  - Haddock 4X5Y: cut 57% — from 7,128 mt to 3,069 mt
+  - Atlantic halibut 3NOPs4VWX5Zc: cut 85 mt
+  - Atlantic cod 4VsW / 4Vn: moratorium, bycatch only. 4X cod in critical zone, no recovery projected.
+- **Groundfish boats under financial pressure** — quota cuts mean more vessels will exit the industry, further tightening domestic bait supply.
+
+> This is the structural backdrop that makes the Central American operation not just viable, but necessary for the North American bait market.
 
 ---
 
@@ -216,7 +235,7 @@ David's skillset (government relationships, ambassador-level connections, Ottawa
 - [ ] Vet Poirier Fish via lobster network
 - [ ] Research bareboat charter + skilled foreign worker permit (Nicaragua)
 - [ ] Honduras Caribbean coast regulatory deep dive
-- [ ] Confirm Mike Beardsley's Coldwater company full name
+- [ ] Confirm Mike Bairdsley's Coldwater company full name
 - [ ] Container freight rate: Caribbean Nicaragua → Atlantic Canada (refrigerated)
 - [ ] Determine Skretting Honduras raw material needs — open door via Steve Penny
 - [ ] Engage tax lawyer re: transfer pricing documentation
@@ -226,8 +245,10 @@ David's skillset (government relationships, ambassador-level connections, Ottawa
 - [ ] Approach Dana — logistics partner conversation
 - [ ] Identify COO candidate (Spanish-speaking, Central American ops experience)
 - [ ] David Arenburg — determine right moment to expand beyond Phase 1
+- [ ] David Arenburg — discuss fishmeal plant location tied to solar infrastructure deployment
+- [ ] Go-and-learn trip to Central America — size fish movement before committing to plant scale
 - [ ] Build dashboard / infographic web page (hero stat: 661M lbs)
 
 ---
 
-*Last updated: 2026-05-17. Update this file at the end of every session or when facts change.*
+*Last updated: 2026-05-18. Update this file at the end of every session or when facts change.*
