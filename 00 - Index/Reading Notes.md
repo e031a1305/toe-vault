@@ -36,3 +36,12 @@ my notes: needs deeper investigation
 tags: #chronology #scaligerian #fomenko #baldauf #alternative-history #seed
 
 ---
+
+#### Emerald Tablets of Thoth — First Written Evidence of the Creation of Man
+source: *Tesla and the Cabbage Patch Kids: The Fall of the Tartarian Empire and Reset of 1776*
+claim: The Emerald Tablets of Thoth contain the first written evidence of the creation of man
+consensus: Mainstream scholars consider the Doreal version (1930s) a modern channeled text, not an ancient document. The original short Hermetic "Emerald Tablet" dates to 6th–8th century Arabic sources and does not describe the creation of man. Neither is recognized by academia as a historical record of human origins.
+my notes:
+tags: #emerald-tablets #thoth #hermetic #creation #ancient #esoteric #atlantean #origins
+
+---
