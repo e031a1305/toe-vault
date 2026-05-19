@@ -39,3 +39,12 @@ notes: Robert Baldauf, German-Swiss philologist. Argued large portions of ancien
 tags: #chronology #alternative-history #baldauf #history #scaligerian
 
 ---
+
+### The Emerald Tablets of Thoth the Atlantean — Doreal (1930s)
+status: to-read
+sparked by: *Tesla and the Cabbage Patch Kids*
+notes: Claimed by Maurice Doreal to be a translation of ancient Atlantean tablets. Described as containing the first written evidence of the creation of man. Note: two distinct texts share a similar name — the short Hermetic "Emerald Tablet" (6th–8th century Arabic sources) and this longer Doreal version. The Tesla book appears to reference the Doreal text.
+my notes:
+tags: #emerald-tablets #thoth #hermetic #creation #ancient #esoteric #atlantean
+
+---
